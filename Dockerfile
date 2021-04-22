@@ -6,4 +6,4 @@ WORKDIR /mlflow
 
 EXPOSE 5000
 
-CMD [ "mlflow", "server" ]
+ENTRYPOINT [ "mlflow", "server", "--host", "0.0.0.0", "-p", "5000"]
